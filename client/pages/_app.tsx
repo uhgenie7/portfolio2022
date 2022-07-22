@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import ThemeProvider from './context/themeProvider';
+import ThemeProvider from '@src/components/ThemeProvider';
 import { RecoilRoot } from 'recoil';
 import GlobalStyle from '@src/styles/globalStyle';
 
