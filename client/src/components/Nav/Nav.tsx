@@ -35,10 +35,12 @@ const NavStyle = styled.div`
     li {
       margin: 0 5px;
       position: relative;
+      counter-increment: index 1;
       a {
         color: ${({ theme }) => theme.textColor};
         padding: 10px;
         &:before {
+          content: '0' counter(index) '.';
           margin-right: 5px;
           text-align: right;
         }
