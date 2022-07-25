@@ -1,14 +1,25 @@
-import type { FC } from 'react';
+import Nav from './Nav/Nav';
+import styled from 'styled-components';
 
-const AppLayout: FC = ({ children }) => {
+interface IProps {
+  children: React.ReactNode;
+}
+
+const AppLayout = ({ children }: IProps) => {
   return (
-    <>
-      {/* nav */}
+    <AppLayoutWrapper>
+      <Nav />
+      {children}
       {/* body */}
-      {/* children */}
       {/* footer */}
-    </>
+    </AppLayoutWrapper>
   );
 };
 
 export default AppLayout;
+
+const AppLayoutWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;

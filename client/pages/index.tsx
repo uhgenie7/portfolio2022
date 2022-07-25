@@ -1,11 +1,10 @@
-import Nav from '@src/components/Nav/Nav';
+import AppLayout from '@src/components/AppLayout';
 
 const Home = () => {
   return (
-    <div>
-      <Nav />
+    <AppLayout>
       <div>Home</div>
-    </div>
+    </AppLayout>
   );
 };
 
