@@ -6,9 +6,5 @@ declare module 'styled-components' {
     textColor: string;
     bgColor: string;
     borderColor: string;
-    mixins: {
-      flexBetween: ThemedCssFunction<DefaultTheme>;
-      flexCenter: ThemedCssFunction<DefaultTheme>;
-    };
   }
 }

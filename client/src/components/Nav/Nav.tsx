@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import config from '@src/libs/config.json';
 import Link from 'next/link';
+import mixins from '@src/styles/mixin';
 
 const Nav = () => {
   const { navLinks } = config;
@@ -10,7 +11,9 @@ const Nav = () => {
         {navLinks &&
           navLinks.map(({ url, name, key }) => (
             <li key={key}>
-              <Link href={url}>{name}</Link>
+              <Link href={url}>
+                <a>{name}</a>
+              </Link>
             </li>
           ))}
       </ol>
@@ -18,12 +21,14 @@ const Nav = () => {
   );
 };
 
+export default Nav;
+
 const NavStyle = styled.div`
   display: flex;
   align-items: center;
 
   ol {
-    ${({ theme }) => theme.mixins.flexBetween};
+    ${mixins.flexBetween}
     padding: 0;
     margin: 0;
     list-style: none;
@@ -31,6 +36,7 @@ const NavStyle = styled.div`
       margin: 0 5px;
       position: relative;
       a {
+        color: ${({ theme }) => theme.textColor};
         padding: 10px;
         &:before {
           margin-right: 5px;
