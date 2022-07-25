@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import styled from 'styled-components';
 import { ThemeProvider as StyledProvider } from 'styled-components';
 import { isDarkAtom } from 'states';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
@@ -16,7 +17,7 @@ const ThemeProvider = ({ children }: IProps) => {
   return (
     <>
       <StyledProvider theme={isDarkMode ? darkTheme : lightTheme}>
-        <button onClick={toggleDark}>TOGGLE</button>
+        <ToggleWrapper onClick={toggleDark}>{isDarkMode ? '🌚' : '🌝'}</ToggleWrapper>
         {children}
       </StyledProvider>
     </>
@@ -24,3 +25,11 @@ const ThemeProvider = ({ children }: IProps) => {
 };
 
 export default ThemeProvider;
+
+const ToggleWrapper = styled.button`
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+`;
