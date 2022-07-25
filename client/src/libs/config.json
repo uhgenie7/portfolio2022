@@ -28,5 +28,112 @@
       "name": "Blog",
       "url": "https://jineecode.tistory.com/"
     }
-  ]
+  ],
+  "skills": {
+    "language": [
+      {
+        "key": 0,
+        "name": "JavaScript (ES6+)",
+        "image": "javascript"
+      },
+      {
+        "key": 1,
+        "name": "TypeScript",
+        "image": "typeScript"
+      }
+    ],
+    "frontend": [
+      {
+        "key": 0,
+        "name": "React",
+        "image": "react"
+      },
+      {
+        "key": 1,
+        "name": "ReactNative",
+        "image": "reactnative"
+      },
+      {
+        "key": 2,
+        "name": "Jquery",
+        "image": "jquery"
+      },
+      {
+        "key": 3,
+        "name": "NextJs",
+        "image": "nextjs"
+      },
+      {
+        "key": 4,
+        "name": "Redux",
+        "image": "redux"
+      },
+      {
+        "key": 5,
+        "name": "Storybook",
+        "image": "storybook"
+      },
+      {
+        "key": 6,
+        "name": "Styled-Component",
+        "image": "styledcomponent"
+      },
+      {
+        "key": 7,
+        "name": "React-Navigation",
+        "image": "reactnavigation"
+      },
+      {
+        "key": 8,
+        "name": "Graphql",
+        "image": "graphql"
+      }
+    ],
+    "backend": [
+      {
+        "key": 0,
+        "name": "NodeJs",
+        "image": "nodejs"
+      },
+      {
+        "key": 1,
+        "name": "Express",
+        "image": "express"
+      },
+      {
+        "key": 2,
+        "name": "Apollo",
+        "image": "apollo"
+      }
+    ],
+    "devops": [
+      {
+        "key": 0,
+        "name": "Github",
+        "image": "github"
+      },
+      {
+        "key": 1,
+        "name": "Gitlab",
+        "image": "gitlab"
+      }
+    ],
+    "tool": [
+      {
+        "key": 0,
+        "name": "Slack",
+        "image": "slack"
+      },
+      {
+        "key": 1,
+        "name": "Jira",
+        "image": "jira"
+      },
+      {
+        "key": 2,
+        "name": "Notion",
+        "image": "notion"
+      }
+    ]
+  }
 }
