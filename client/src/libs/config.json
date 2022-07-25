@@ -16,5 +16,17 @@
       "name": "Contact",
       "url": "/#contact"
     }
+  ],
+  "socialLinks": [
+    {
+      "key": 0,
+      "name": "GitHub",
+      "url": "https://github.com/uhj1993"
+    },
+    {
+      "key": 1,
+      "name": "Blog",
+      "url": "https://jineecode.tistory.com/"
+    }
   ]
 }
