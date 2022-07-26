@@ -21,7 +21,14 @@ const Section = ({ children, id, title }: IProps) => {
 const AboutSectionWrapper = styled.section`
   h2 {
     font-size: 1.5rem;
-    margin: 10px;
+    margin-bottom: 16px;
+    color: var(--main);
+
+    &:before {
+      counter-increment: section;
+      content: '0' counter(section) '.';
+      margin-right: 10px;
+    }
   }
 `;
 

@@ -23,7 +23,6 @@ const About = () => {
           </p>
         </div>
         <div className="skillsWrapper">
-          <p>최근 사용하고 있는 기술입니다</p>
           <ul className="skillSets">
             {entries &&
               entries.map((category, index) => (
@@ -67,11 +66,13 @@ const InnerWrapper = styled.div`
   }
 
   .skillsCategory {
+    color: var(--main);
     font-size: 16px;
   }
 
   .skillCategory {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .skill {
