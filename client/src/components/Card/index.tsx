@@ -39,6 +39,9 @@ const Card = ({ title, language, data, url, description }: TypeProject) => {
 export default Card;
 
 const Container = styled.li`
+  width: 100%;
+  margin: 8px auto;
+
   .inner {
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
     padding: 2rem 1.75rem;

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import type { TypeCompany } from '@src/types/types';
-import ProjectItem from '../ProjectItem';
+import Card from '../Card';
 
 const Company = ({ title, date, icon, project, url }: TypeCompany) => {
   return (
@@ -17,18 +17,10 @@ const Company = ({ title, date, icon, project, url }: TypeCompany) => {
         </h3>
         <p className="range">{date}</p>
       </div>
-      <ul>
+      <ul className="projectList">
         {project.reverse().map(({ id, title, language, description, data, url }) => {
           return (
-            <ProjectItem
-              key={id}
-              id={id}
-              title={title}
-              language={language}
-              description={description}
-              data={data}
-              url={url}
-            />
+            <Card key={id} id={id} title={title} language={language} description={description} data={data} url={url} />
           );
         })}
       </ul>
