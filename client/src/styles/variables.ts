@@ -3,6 +3,7 @@ import { css } from 'styled-components';
 const variables = css`
   :root {
     --main: #25b5aa;
+    --sub: #00b9ef;
     --success: #83e031;
     --info: #42c9ff;
     --warning: #ffc747;
