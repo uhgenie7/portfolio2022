@@ -19,7 +19,6 @@ const Section = ({ children, id, title }: IProps) => {
 };
 
 const AboutSectionWrapper = styled.section`
-  width: clamp(45ch, 50%, 75ch);
   h2 {
     font-size: 1.5rem;
     margin: 10px;
