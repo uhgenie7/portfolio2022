@@ -13,7 +13,16 @@ export const darkTheme: DefaultTheme = {
   borderColor: '1px solid #2c2d33',
 };
 
+const colors = {
+  main: '#25b5aa',
+  success: '#83E031',
+  info: '#42C9FF',
+  warning: '#FFC747',
+  danger: '#FF543A',
+};
+
 export const theme = {
   lightTheme,
   darkTheme,
+  colors,
 };

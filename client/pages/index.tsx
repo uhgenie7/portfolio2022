@@ -1,11 +1,11 @@
-import Nav from '@src/components/Nav';
+import AppLayout from '@src/components/AppLayout';
+import About from '@src/components/sections/About';
 
 const Home = () => {
   return (
-    <div>
-      <Nav />
-      <div>Home</div>
-    </div>
+    <AppLayout>
+      <About />
+    </AppLayout>
   );
 };
 
