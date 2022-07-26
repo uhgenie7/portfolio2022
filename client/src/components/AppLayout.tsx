@@ -8,7 +8,9 @@ interface IProps {
 const AppLayout = ({ children }: IProps) => {
   return (
     <>
-      <Nav />
+      <NavWrapper>
+        <Nav />
+      </NavWrapper>
       <AppLayoutWrapper>
         {children}
         {/* body */}
@@ -20,6 +22,12 @@ const AppLayout = ({ children }: IProps) => {
 
 export default AppLayout;
 
+const NavWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const AppLayoutWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -27,5 +35,5 @@ const AppLayoutWrapper = styled.div`
   flex-direction: column;
   min-height: 100vh;
   margin: auto;
-  width: 31.25rem;
+  width: 46.25rem;
 `;

@@ -14,7 +14,7 @@ export const darkTheme: DefaultTheme = {
 };
 
 const colors = {
-  main: '#3366FF',
+  main: '#25b5aa',
   success: '#83E031',
   info: '#42C9FF',
   warning: '#FFC747',
