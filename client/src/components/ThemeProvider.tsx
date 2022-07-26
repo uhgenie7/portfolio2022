@@ -31,5 +31,6 @@ const ToggleWrapper = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 0;
+  right: 16px;
+  bottom: 16px;
 `;
