@@ -28,12 +28,22 @@ const NavStyle = styled.div`
   align-items: center;
 
   ol {
-    ${mixins.flexBetween}
     padding: 0;
     margin: 0;
     list-style: none;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 150px;
+      margin: 0 auto;
+      background-color: var(--main);
+    }
+
     li {
-      margin: 0 5px;
+      font-size: 18px;
+      margin: 10px 0 15px;
       position: relative;
       counter-increment: index 1;
       a {
@@ -43,6 +53,7 @@ const NavStyle = styled.div`
           content: '0' counter(index) '.';
           margin-right: 5px;
           text-align: right;
+          color: var(--main);
         }
       }
     }
