@@ -19,13 +19,17 @@ const Section = ({ children, id, title }: IProps) => {
 };
 
 const AboutSectionWrapper = styled.section`
+  width: 100%;
+  counter-increment: section;
+  min-height: 100vh;
+
   h2 {
+    width: 100%;
     font-size: 1.5rem;
     margin-bottom: 16px;
     color: var(--main);
 
     &:before {
-      counter-increment: section;
       content: '0' counter(section) '.';
       margin-right: 10px;
     }

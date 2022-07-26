@@ -1,0 +1,52 @@
+{
+  "company": [
+    {
+      "id": 0,
+      "title": "에이아이에스",
+      "date": "2021.5 ~ 현재",
+      "icon": "company1",
+      "url": "https://www.aiskorea.co.kr/ko/home",
+      "project": [
+        {
+          "id": 0,
+          "title": "웹앱 개발",
+          "language": ["HTML", "CSS", "Javascript", "JQuery"],
+          "description": "B2G 프로젝트",
+          "data": ["하이브리드 앱 개발", "전반적인 화면 및 기능 개발", "Chart.js를 이용한 차트 화면 개발"],
+          "url": null
+        },
+        {
+          "id": 1,
+          "title": "에이아이에스 홈페이지 개발",
+          "language": ["React"],
+          "description": "사내 홈페이지 개발",
+          "data": ["React 기반의 사내 홈페이지 개발", "SEO를 위한 react-helmet 사용", "다국어  지원", "GA, GTM 도입"],
+          "url": "https://www.aiskorea.co.kr/ko/home"
+        },
+        {
+          "id": 2,
+          "title": "에이아이에스 관리자 페이지 개발",
+          "language": ["NextJs", "Apollo", "Typescript"],
+          "description": "사내 관리자 페이지 개발",
+          "data": ["React 기반의 Next.js 개발 환경 구축", "요구사항 도출 및 화면 설계", "화면 및 기능 개발"],
+          "url": null
+        },
+        {
+          "id": 3,
+          "title": "'잘키움' 어플리케이션 개발",
+          "language": ["React-Native", "Typescript"],
+          "description": "데이터 기반 노지 스마트팜 솔루션 '잘키움' 어플리케이션 개발",
+          "data": [
+            "React-Native 기반의 어플리케이션 개발 환경 구축 및 배포",
+            "화면 및 기능 개발",
+            "RTK(Redux-Toolkit)를 이용한 데이터 관리",
+            "React-navigation을 이용한 네비게이션 및 히스토리 관리",
+            "SMS 인증 코드의 원터치 자동 완성 API를 이용한 사용자 편의성 개선",
+            "encrypted-storage, keychain 으로 민감한 데이터 암호화"
+          ],
+          "url": "https://play.google.com/store/apps/details?id=com.aiskorea.wellgrower&hl=ko"
+        }
+      ]
+    }
+  ]
+}
