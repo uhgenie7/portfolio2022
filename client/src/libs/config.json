@@ -34,105 +34,124 @@
       {
         "key": 0,
         "name": "JavaScript (ES6+)",
-        "image": "javascript"
+        "image": "javascript",
+        "level": 80
       },
       {
         "key": 1,
         "name": "TypeScript",
-        "image": "typeScript"
+        "image": "typeScript",
+        "level": 40
       }
     ],
     "frontend": [
       {
         "key": 0,
         "name": "React",
-        "image": "react"
+        "image": "reactjs",
+        "level": 70
       },
       {
         "key": 1,
         "name": "ReactNative",
-        "image": "reactnative"
+        "image": "reactnative",
+        "level": 70
       },
       {
         "key": 2,
         "name": "Jquery",
-        "image": "jquery"
+        "image": "jquery",
+        "level": 80
       },
       {
         "key": 3,
         "name": "NextJs",
-        "image": "nextjs"
+        "image": "nextjs",
+        "level": 60
       },
       {
         "key": 4,
         "name": "Redux",
-        "image": "redux"
+        "image": "redux",
+        "level": 60
       },
       {
         "key": 5,
         "name": "Storybook",
-        "image": "storybook"
+        "image": "storybook",
+        "level": 20
       },
       {
         "key": 6,
         "name": "Styled-Component",
-        "image": "styledcomponent"
+        "image": "styledcomponents",
+        "level": 70
       },
       {
         "key": 7,
         "name": "React-Navigation",
-        "image": "reactnavigation"
+        "image": "reactnavigation",
+        "level": 60
       },
       {
         "key": 8,
         "name": "Graphql",
-        "image": "graphql"
+        "image": "graphql",
+        "level": 20
       }
     ],
     "backend": [
       {
         "key": 0,
         "name": "NodeJs",
-        "image": "nodejs"
+        "image": "nodejs",
+        "level": 20
       },
       {
         "key": 1,
         "name": "Express",
-        "image": "express"
+        "image": "expressjs",
+        "level": 20
       },
       {
         "key": 2,
         "name": "Apollo",
-        "image": "apollo"
+        "image": "apollo",
+        "level": 20
       }
     ],
     "devops": [
       {
         "key": 0,
         "name": "Github",
-        "image": "github"
+        "image": "github",
+        "level": 70
       },
       {
         "key": 1,
         "name": "Gitlab",
-        "image": "gitlab"
+        "image": "gitlab",
+        "level": 60
       }
     ],
     "tool": [
       {
         "key": 0,
         "name": "Slack",
-        "image": "slack"
+        "image": "slack",
+        "level": 70
       },
       {
         "key": 1,
         "name": "Jira",
-        "image": "jira"
+        "image": "jira",
+        "level": 60
       },
       {
         "key": 2,
         "name": "Notion",
-        "image": "notion"
+        "image": "notion",
+        "level": 60
       }
     ]
   }
