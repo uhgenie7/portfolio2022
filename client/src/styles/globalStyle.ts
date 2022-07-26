@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     line-height: 1.5;
+    word-break: keep-all;
   }
   
   button {

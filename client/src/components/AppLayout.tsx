@@ -35,5 +35,5 @@ const AppLayoutWrapper = styled.div`
   flex-direction: column;
   min-height: 100vh;
   margin: auto;
-  width: 31.25rem;
+  width: 46.25rem;
 `;
