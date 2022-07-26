@@ -7,12 +7,14 @@ interface IProps {
 
 const AppLayout = ({ children }: IProps) => {
   return (
-    <AppLayoutWrapper>
+    <>
       <Nav />
-      {children}
-      {/* body */}
-      {/* footer */}
-    </AppLayoutWrapper>
+      <AppLayoutWrapper>
+        {children}
+        {/* body */}
+        {/* footer */}
+      </AppLayoutWrapper>
+    </>
   );
 };
 
@@ -20,6 +22,10 @@ export default AppLayout;
 
 const AppLayoutWrapper = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+  margin: auto;
+  width: 31.25rem;
 `;
