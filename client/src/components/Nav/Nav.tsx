@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import config from '@src/libs/config.json';
 import Link from 'next/link';
-import mixins from '@src/styles/mixin';
 
 const Nav = () => {
   const { navLinks } = config;
@@ -28,10 +27,6 @@ const NavStyle = styled.div`
   align-items: center;
 
   ol {
-<<<<<<< HEAD:client/src/components/Nav/Nav.tsx
-    ${mixins.flexBetween}
-=======
->>>>>>> 258d5817e492aea5f1d4274308b42861992f6246:client/src/components/Nav/index.tsx
     padding: 0;
     margin: 0;
     list-style: none;

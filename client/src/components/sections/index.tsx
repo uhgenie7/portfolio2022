@@ -8,10 +8,8 @@ interface IProps {
 }
 
 const Section = ({ children, id, title }: IProps) => {
-  const scrollRef = useRef(null);
-
   return (
-    <AboutSectionWrapper id={id} ref={scrollRef}>
+    <AboutSectionWrapper id={id}>
       <h2>{title}</h2>
       {children}
     </AboutSectionWrapper>
