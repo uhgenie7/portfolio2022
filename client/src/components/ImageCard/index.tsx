@@ -34,13 +34,13 @@ const ImageCard = ({ title, language, description, image, github, homepage }: Ty
             </ul>
           </div>
           <div>
-            {github && (
-              <a target="_blank" rel="noopener noreferrer" href={github} className="github">
+            {homepage && (
+              <a target="_blank" rel="noopener noreferrer" href={homepage} className="github">
                 <OutLink width={24} height={24} />
               </a>
             )}
-            {homepage && (
-              <a target="_blank" rel="noopener noreferrer" href={homepage}>
+            {github && (
+              <a target="_blank" rel="noopener noreferrer" href={github}>
                 <Github />
               </a>
             )}
