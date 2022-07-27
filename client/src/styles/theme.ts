@@ -1,3 +1,4 @@
+import { css } from 'styled-components';
 import { DefaultTheme } from 'styled-components';
 
 export const lightTheme: DefaultTheme = {

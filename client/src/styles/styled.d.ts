@@ -1,4 +1,5 @@
 import 'styled-components';
+import type { ThemedCssFunction } from 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
