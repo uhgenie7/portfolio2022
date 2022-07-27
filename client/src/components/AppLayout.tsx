@@ -1,5 +1,6 @@
 import Nav from './Nav';
 import styled from 'styled-components';
+import Footer from '@src/components/Footer';
 
 interface IProps {
   children: React.ReactNode;
@@ -12,6 +13,7 @@ const AppLayout = ({ children }: IProps) => {
         <Nav />
       </NavWrapper>
       <AppLayoutWrapper>{children}</AppLayoutWrapper>
+      <Footer />
     </Wrap>
   );
 };
