@@ -25,7 +25,7 @@ const About = () => {
           <p>
             보다 나은 사용자 경험을 제공하기 위해 <span className="hightlight">시맨틱 마크업</span>을 준수하고{' '}
             <span className="hightlight">정렬된 스타일</span>, <span className="hightlight">인터랙티브</span>한 기능을
-            구현하려 노력하고 있습니다. 좋아하는 일을 즐기면서 잘하는 것, 제가 꿈꾸는 저의 모습입니다.
+            구현하려 노력하고 있습니다.
           </p>
         </div>
         <div className="skillsWrapper">
