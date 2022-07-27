@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 import Section from '..';
 import mixins from '@src/styles/mixin';
+import projects from '@src/libs/projects.json';
+import ImageCard from '@src/components/ImageCard';
+import type { TypeToyProjects } from '@src/types/types';
 
 const Projects = () => {
+  let parseJson = JSON.parse(JSON.stringify(projects));
+  const { projects: toyProject }: TypeToyProjects = parseJson;
+
   return (
     <Section title="My Projects" id="projects">
       <InnerWrapper>
@@ -12,7 +18,20 @@ const Projects = () => {
           작업물이 늘어날수록 발전하는 모습을 볼 수 있습니다. <span className="hightlight">Githube</span>에서 더 자세히
           확인할 수 있습니다.
         </p>
-        <ul></ul>
+        <ul>
+          {toyProject.reverse().map(({ id, image, title, description, homepage, github, language }) => (
+            <ImageCard
+              image={image}
+              id={id}
+              key={id}
+              title={title}
+              description={description}
+              homepage={homepage}
+              language={language}
+              github={github}
+            />
+          ))}
+        </ul>
       </InnerWrapper>
     </Section>
   );

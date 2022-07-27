@@ -9,7 +9,14 @@ const Company = ({ title, date, icon, project, url }: TypeCompany) => {
       <div className="titleWrapper">
         <h3 className="companyTitle">
           <div className="imageWrapper">
-            <Image width={50} height={50} src={`/images/${icon}.png`} alt={title} />
+            <Image
+              width={50}
+              height={50}
+              src={`/images/${icon}.png`}
+              alt={title}
+              placeholder="blur"
+              blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
+            />
           </div>
           <a className="companyLink" href={url} target="_blank" rel="noreferrer noopener">
             @{title}

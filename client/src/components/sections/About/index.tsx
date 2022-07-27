@@ -45,7 +45,14 @@ const About = () => {
                       skill.map(({ name, key, image, level }: TypeSkill) => (
                         <li key={key} className="skill">
                           <div>
-                            <Image width={30} height={30} src={`/skills/${image}.png`} alt={name} />
+                            <Image
+                              width={30}
+                              height={30}
+                              src={`/skills/${image}.png`}
+                              alt={name}
+                              placeholder="blur"
+                              blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
+                            />
                           </div>
                           <p>{name}</p>
                           <div>
