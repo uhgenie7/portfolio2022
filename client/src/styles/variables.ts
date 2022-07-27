@@ -11,6 +11,7 @@ const variables = css`
     --info: #42c9ff;
     --warning: #ffc747;
     --danger: #ff543a;
+    --hightlight: #d4f0f0;
 
     --fs-sm: 14px;
     --fs-md: 16px;

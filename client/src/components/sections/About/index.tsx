@@ -5,6 +5,7 @@ import Section from '..';
 import config from '@src/libs/config.json';
 import { TypeSkills, TypeSkill } from '@src/types/types';
 import { theme } from '@src/styles/theme';
+import mixins from '@src/styles/mixin';
 
 const About = () => {
   let parseJson = JSON.parse(JSON.stringify(config));
@@ -15,16 +16,25 @@ const About = () => {
     <Section title="About Me" id="about">
       <InnerWrapper>
         <div className="intro">
-          <p>안녕하세요, 프론트엔드 개발자 엄혜진입니다.</p>
+          <p>
+            안녕하세요, <span className="hightlight">프론트엔드 개발자</span> 엄혜진입니다.
+          </p>
           <p>
             저는 프론트엔드 개발자로서 어떻게 하면 사용자가 더 편리하고 효율적으로 정보를 소비할 수 있을 지 고민합니다.
           </p>
           <p>
-            보다 나은 사용자 경험을 제공하기 위해 시맨틱 마크업을 준수하고 정렬된 스타일, 인터랙티브한 기능을 구현하려
-            노력하고 있습니다. 좋아하는 일을 즐기면서 잘하는 것, 제가 꿈꾸는 저의 모습입니다.
+            보다 나은 사용자 경험을 제공하기 위해 <span className="hightlight">시맨틱 마크업</span>을 준수하고{' '}
+            <span className="hightlight">정렬된 스타일</span>, <span className="hightlight">인터랙티브</span>한 기능을
+            구현하려 노력하고 있습니다. 좋아하는 일을 즐기면서 잘하는 것, 제가 꿈꾸는 저의 모습입니다.
           </p>
         </div>
         <div className="skillsWrapper">
+          <br />
+          <p>
+            아래 <span className="hightlight">스킬</span>에 경험이 있고 새로운 것을 배우는데 관심이 있습니다.
+            <br />
+            계획을 세워 협업은 물론 혼자서 해결하는 자세를 갖추어 매일 발전해나가고 있습니다.
+          </p>
           <ul className="skillSets">
             {entries &&
               entries.map((category, index) => (
@@ -83,5 +93,9 @@ const InnerWrapper = styled.div`
     align-items: center;
     font-size: 12px;
     margin: 16px;
+  }
+
+  .hightlight {
+    ${mixins.halfHL}
   }
 `;
