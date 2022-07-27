@@ -6,6 +6,8 @@ export const lightTheme: DefaultTheme = {
   textColor: '#31302E',
   borderColor: '1px solid #eaeaea',
   highlight: '#d4f0f0',
+  toggleBorder: '#FFF',
+  gradient: 'linear-gradient(#39598A, #79D7ED)',
 };
 
 export const darkTheme: DefaultTheme = {
@@ -13,6 +15,8 @@ export const darkTheme: DefaultTheme = {
   textColor: '#ccc',
   borderColor: '1px solid #2c2d33',
   highlight: '#426693',
+  toggleBorder: '#6B8096',
+  gradient: 'linear-gradient(#091236, #1E215D)',
 };
 
 const colors = {

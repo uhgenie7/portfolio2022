@@ -7,5 +7,7 @@ declare module 'styled-components' {
     bgColor: string;
     borderColor: string;
     highlight: string;
+    toggleBorder: string;
+    gradient: string;
   }
 }

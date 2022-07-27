@@ -1,6 +1,7 @@
 import Nav from './Nav';
 import styled from 'styled-components';
 import Footer from '@src/components/Footer';
+import ThemeToggle from '@src/components/ThemeToogle';
 
 interface IProps {
   children: React.ReactNode;
@@ -11,6 +12,7 @@ const AppLayout = ({ children }: IProps) => {
     <Wrap>
       <NavWrapper>
         <Nav />
+        <ThemeToggle />
       </NavWrapper>
       <AppLayoutWrapper>{children}</AppLayoutWrapper>
       <Footer />
