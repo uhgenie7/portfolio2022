@@ -1,8 +1,8 @@
+import { useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
-import styled from 'styled-components';
 import { ThemeProvider as StyledProvider } from 'styled-components';
 import { isDarkAtom } from 'states';
-import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilValue, useRecoilState } from 'recoil';
 import { darkTheme, lightTheme } from '@src/styles/theme';
 
 type IProps = {
@@ -10,26 +10,18 @@ type IProps = {
 };
 
 const ThemeProvider = ({ children }: IProps) => {
-  const isDarkMode = useRecoilValue(isDarkAtom);
-  const setDarkAtom = useSetRecoilState(isDarkAtom);
-  const toggleDark = () => setDarkAtom((prev) => !prev);
+  const [isInitial, setIsInitial] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useRecoilState(isDarkAtom);
+
+  useEffect(() => {
+    setIsInitial(false);
+  }, []);
 
   return (
     <>
-      <StyledProvider theme={isDarkMode ? darkTheme : lightTheme}>
-        <ToggleWrapper onClick={toggleDark}>{isDarkMode ? '🌚' : '🌝'}</ToggleWrapper>
-        {children}
-      </StyledProvider>
+      <StyledProvider theme={isDarkMode ? darkTheme : lightTheme}>{children}</StyledProvider>
     </>
   );
 };
 
 export default ThemeProvider;
-
-const ToggleWrapper = styled.button`
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  right: 0;
-`;

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import type { AppProps } from 'next/app';
 import ThemeProvider from '@src/components/ThemeProvider';
 import { RecoilRoot } from 'recoil';
@@ -6,6 +7,14 @@ import Head from 'next/head';
 import Favicon from '@src/components/Favicon';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <>
       <RecoilRoot>

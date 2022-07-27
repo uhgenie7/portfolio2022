@@ -6,5 +6,8 @@ declare module 'styled-components' {
     textColor: string;
     bgColor: string;
     borderColor: string;
+    highlight: string;
+    toggleBorder: string;
+    gradient: string;
   }
 }
