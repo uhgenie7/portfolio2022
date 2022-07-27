@@ -10,7 +10,7 @@ const Card = ({ title, language, data, url, description }: TypeProject) => {
           <h3 className="cardTitle">{title}</h3>
           {url && (
             <a target="_blank" rel="noopener noreferrer" href={url}>
-              <OutLink width={15} height={15} />
+              <OutLink width={24} height={24} />
             </a>
           )}
         </div>

@@ -30,3 +30,17 @@ export interface TypeProject {
   data: string[];
   url: string | null;
 }
+
+export interface TypeToyProjects {
+  projects: TypeToyProject[];
+}
+
+export interface TypeToyProject {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  homepage: string | null;
+  github: string;
+  language: string[];
+}
