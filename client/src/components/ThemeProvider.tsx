@@ -1,7 +1,8 @@
+import { useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
 import { ThemeProvider as StyledProvider } from 'styled-components';
 import { isDarkAtom } from 'states';
-import { useRecoilValue } from 'recoil';
+import { useRecoilValue, useRecoilState } from 'recoil';
 import { darkTheme, lightTheme } from '@src/styles/theme';
 
 type IProps = {
@@ -9,7 +10,12 @@ type IProps = {
 };
 
 const ThemeProvider = ({ children }: IProps) => {
-  const isDarkMode = useRecoilValue(isDarkAtom);
+  const [isInitial, setIsInitial] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useRecoilState(isDarkAtom);
+
+  useEffect(() => {
+    setIsInitial(false);
+  }, []);
 
   return (
     <>
