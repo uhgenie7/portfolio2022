@@ -1,11 +1,15 @@
-import Nav from '@src/components/Nav/Nav';
+import AppLayout from '@src/components/AppLayout';
+import About from '@src/components/sections/About';
+import Carrer from '@src/components/sections/Carrer';
+import Projects from '@src/components/sections/Projects';
 
 const Home = () => {
   return (
-    <div>
-      <Nav />
-      <div>Home</div>
-    </div>
+    <AppLayout>
+      <About />
+      <Carrer />
+      <Projects />
+    </AppLayout>
   );
 };
 
