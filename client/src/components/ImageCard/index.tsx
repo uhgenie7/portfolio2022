@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import OutLink from '../../assets/icons/external_link.svg';
-import Github from '../../assets/icons/Github.svg';
+import Github from '../../assets/icons/github.svg';
 import type { TypeToyProject } from '@src/types/types';
 import Image from 'next/image';
 
