@@ -115,4 +115,10 @@ const Container = styled.li`
   .github {
     margin-right: 16px;
   }
+
+  svg {
+    &:hover {
+      fill: var(--main);
+    }
+  }
 `;

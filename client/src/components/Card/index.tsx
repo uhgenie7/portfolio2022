@@ -91,4 +91,10 @@ const Container = styled.li`
     font-size: 12px;
     margin-right: 15px;
   }
+
+  svg {
+    &:hover {
+      fill: var(--main);
+    }
+  }
 `;
