@@ -11,11 +11,7 @@ const AppLayout = ({ children }: IProps) => {
       <NavWrapper>
         <Nav />
       </NavWrapper>
-      <AppLayoutWrapper>
-        {children}
-        {/* body */}
-        {/* footer */}
-      </AppLayoutWrapper>
+      <AppLayoutWrapper>{children}</AppLayoutWrapper>
     </Wrap>
   );
 };
