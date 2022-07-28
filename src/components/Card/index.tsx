@@ -71,6 +71,7 @@ const Container = styled.li`
 
   .cardDone {
     margin: 8px;
+    color: var(--main2);
     &:before {
       content: '▹';
       color: var(--main2);
