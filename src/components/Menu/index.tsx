@@ -50,7 +50,9 @@ const Menu = () => {
               ))}
           </ol>
         </nav>
-        <ThemeToogle />
+        <div className="menuTheme">
+          <ThemeToogle />
+        </div>
         <Social />
       </SideMenu>
     </MenuWrapper>
@@ -91,6 +93,10 @@ const SideMenu = styled.aside<{ isMobile: boolean; menuOpen: boolean }>`
   z-index: 9;
   transform: ${({ menuOpen }) => (menuOpen ? 'translateX(0vw)' : 'translateX(100vw)')};
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  .menuTheme {
+    margin-top: 2rem;
+  }
 
   nav {
     width: 100%;

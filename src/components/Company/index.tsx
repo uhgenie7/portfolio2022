@@ -25,7 +25,7 @@ const Company = ({ title, date, icon, project, url }: TypeCompany) => {
         <p className="range">{date}</p>
       </div>
       <ul className="projectList">
-        {project.reverse().map(({ id, title, language, description, data, url }) => {
+        {[...project].reverse().map(({ id, title, language, description, data, url }) => {
           return (
             <Card key={id} id={id} title={title} language={language} description={description} data={data} url={url} />
           );
@@ -49,5 +49,10 @@ const Container = styled.li`
   .range {
     font-size: 13px;
     margin-left: 16px;
+  }
+
+  .imageWrapper {
+    background-color: var(--snow);
+    margin: 10px;
   }
 `;

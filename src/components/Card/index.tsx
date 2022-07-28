@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import OutLink from '../../assets/icons/external_link.svg';
 import type { TypeProject } from '@src/types/types';
+import { useIsMobile } from '@src/hook/useIsMobile';
 
 const Card = ({ title, language, data, url, description }: TypeProject) => {
+  const isMobile = useIsMobile();
   return (
-    <Container>
+    <Container isMobile={isMobile}>
       <div className="inner">
         <div className="cardTitleWrapper">
           <h3 className="cardTitle">{title}</h3>
@@ -15,15 +17,17 @@ const Card = ({ title, language, data, url, description }: TypeProject) => {
           )}
         </div>
         <p className="cardDesc">{description}</p>
-        <ul>
-          {data.map((data, index) => {
-            return (
-              <li key={index} className="cardDone">
-                {data}
-              </li>
-            );
-          })}
-        </ul>
+        {!isMobile && (
+          <ul>
+            {data.map((data, index) => {
+              return (
+                <li key={index} className="cardDone">
+                  {data}
+                </li>
+              );
+            })}
+          </ul>
+        )}
         <div className="lang">
           <ul>
             {language.map((lang, index) => {
@@ -38,13 +42,13 @@ const Card = ({ title, language, data, url, description }: TypeProject) => {
 
 export default Card;
 
-const Container = styled.li`
+const Container = styled.li<{ isMobile: boolean }>`
   width: 100%;
   margin: 8px auto;
 
   .inner {
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-    padding: 2rem 1.75rem;
+    padding: ${({ isMobile }) => (isMobile ? '1rem 1rem' : '2rem 1.75rem')};
     border: 1px solid var(--main);
     border-radius: 0.75rem;
     background-color: #ffffff;
@@ -85,6 +89,7 @@ const Container = styled.li`
 
   .lang ul {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .lang li {

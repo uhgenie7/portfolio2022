@@ -38,11 +38,11 @@
     },
     {
       "id": 4,
-      "image": "openconcert",
+      "image": "ffseracher",
       "title": "FFXIV SEARCHER",
       "description": "React와 SPA를 이해하기 위해 개발한 개인 프로젝트",
-      "homepage": "http://uhj1993.dothome.co.kr/openconcert/",
-      "github": "https://github.com/uhj1993/openconcert",
+      "homepage": "http://uhj1993.dothome.co.kr/ffseracher/",
+      "github": "https://github.com/uhj1993/FFXIV-SEARCHER",
       "language": ["HTML", "CSS", "SCSS", "JavaScript", "React"]
     }
   ]

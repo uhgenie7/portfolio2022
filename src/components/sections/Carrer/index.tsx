@@ -7,7 +7,6 @@ import type { TypeCarrer } from '@src/types/types';
 const Carrer = () => {
   let parseJson = JSON.parse(JSON.stringify(carrer));
   const { company }: TypeCarrer = parseJson;
-  console.log(company);
 
   return (
     <Section title="My Carrer" id="carrer">
