@@ -13,8 +13,8 @@ const AppLayout = ({ children }: IProps) => {
     <Wrap>
       <NavWrapper>
         <Nav />
-        <Social />
         <ThemeToggle />
+        <Social />
       </NavWrapper>
       <AppLayoutWrapper>{children}</AppLayoutWrapper>
       <Footer />

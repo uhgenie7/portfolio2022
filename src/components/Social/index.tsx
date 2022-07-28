@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Github from '../../assets/icons/github.svg';
 import Tistory from '../../assets/icons/tistory.svg';
+import Resume from '../../assets/icons/resume.svg';
 
 const Social = () => {
   return (
@@ -15,6 +16,11 @@ const Social = () => {
           <Github />
         </a>
       </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="/resume.pdf">
+          <Resume />
+        </a>
+      </li>
     </Container>
   );
 };
@@ -26,6 +32,7 @@ const Container = styled.div`
   display: flex;
   padding: 0.3rem 1rem;
   justify-content: space-between;
+  margin-top: 1rem;
 
   svg {
     fill: ${({ theme }) => theme.textColor};
