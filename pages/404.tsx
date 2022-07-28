@@ -6,7 +6,7 @@ const NotFoundPage = () => {
   return (
     <AppLayout>
       <NotFoundPageStyle>
-        <h1>IT'S NOT YOUR FAULT</h1>
+        <h1>404</h1>
         <h2>요청하신 페이지를 찾을 수 없습니다.</h2>
         <p>
           방문하시려는 페이지의 주소가 잘못 입력되었거나 페이지의 주소가 변경 혹은 삭제되어 요청하신 페이지를 찾을 수
