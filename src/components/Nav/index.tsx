@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import config from '@src/libs/config.json';
 import Link from 'next/link';
-import Button from '../Button';
 
 const Nav = () => {
   const { navLinks } = config;

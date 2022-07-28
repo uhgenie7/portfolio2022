@@ -3,18 +3,28 @@ import styled from 'styled-components';
 import Footer from '@src/components/Footer';
 import ThemeToggle from '@src/components/ThemeToogle';
 import Social from '@src/components/Social';
+import { useIsMobile } from '@src/hook/useIsMobile';
+import Menu from '../assets/icons/menu.svg';
 
 interface IProps {
   children: React.ReactNode;
 }
 
 const AppLayout = ({ children }: IProps) => {
+  const isMobile = useIsMobile();
+
   return (
     <Wrap>
       <NavWrapper>
-        <Nav />
-        <ThemeToggle />
-        <Social />
+        {isMobile ? (
+          <Menu />
+        ) : (
+          <>
+            <Nav />
+            <ThemeToggle />
+            <Social />
+          </>
+        )}
       </NavWrapper>
       <AppLayoutWrapper>{children}</AppLayoutWrapper>
       <Footer />
@@ -26,6 +36,14 @@ export default AppLayout;
 
 const Wrap = styled.div`
   height: 100vh;
+
+  svg {
+    fill: var(--main);
+
+    &:hover {
+      fill: var(--main);
+    }
+  }
 `;
 
 const NavWrapper = styled.header`
