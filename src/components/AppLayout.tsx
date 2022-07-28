@@ -26,7 +26,7 @@ const AppLayout = ({ children }: IProps) => {
           </>
         )}
       </Header>
-      <AppLayoutWrapper>{children}</AppLayoutWrapper>
+      <AppLayoutWrapper isMobile={isMobile}>{children}</AppLayoutWrapper>
       <Footer />
     </Wrap>
   );
@@ -55,11 +55,11 @@ const Header = styled.header<{ isMobile: boolean }>`
   color: var(--main2);
 `;
 
-const AppLayoutWrapper = styled.div`
+const AppLayoutWrapper = styled.div<{ isMobile: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  width: 46.25rem;
+  width: ${({ isMobile }) => (isMobile ? 'min(75vw, 400px);' : '46.25rem')};
 `;
