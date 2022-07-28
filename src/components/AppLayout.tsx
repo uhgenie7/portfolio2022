@@ -45,8 +45,8 @@ const Wrap = styled.div`
 `;
 
 const Header = styled.header<{ isMobile: boolean }>`
-  width: ${({ isMobile }) => (isMobile ? '100%' : '40px')};
-  left: ${({ isMobile }) => (isMobile ? 0 : '40px')};
+  width: ${({ isMobile }) => (isMobile ? '100%' : '15px')};
+  left: ${({ isMobile }) => (isMobile ? 0 : '15px')};
   background: ${({ isMobile }) => (isMobile ? 'var(--mainOpacity)' : 'transparent')};
 
   position: fixed;
