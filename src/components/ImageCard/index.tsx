@@ -2,11 +2,13 @@ import styled from 'styled-components';
 import OutLink from '../../assets/icons/external_link.svg';
 import Github from '../../assets/icons/github.svg';
 import type { TypeToyProject } from '@src/types/types';
+import { useIsMobile } from '@src/hook/useIsMobile';
 import Image from 'next/image';
 
 const ImageCard = ({ title, language, description, image, github, homepage }: TypeToyProject) => {
+  const isMobile = useIsMobile();
   return (
-    <Container>
+    <Container isMobile={isMobile}>
       <div className="inner">
         <div className="imageWrapper">
           <Image
@@ -33,7 +35,7 @@ const ImageCard = ({ title, language, description, image, github, homepage }: Ty
               })}
             </ul>
           </div>
-          <div>
+          <div className="link">
             {homepage && (
               <a target="_blank" rel="noopener noreferrer" href={homepage} className="outlink">
                 <OutLink width={24} height={24} />
@@ -53,13 +55,13 @@ const ImageCard = ({ title, language, description, image, github, homepage }: Ty
 
 export default ImageCard;
 
-const Container = styled.li`
+const Container = styled.li<{ isMobile: boolean }>`
   width: 100%;
   margin: 8px auto;
 
   .inner {
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-    padding: 2rem 1.75rem;
+    padding: ${({ isMobile }) => (isMobile ? '1rem 1rem' : '2rem 1.75rem')};
     border: 1px solid var(--main);
     border-radius: 0.75rem;
     background-color: #ffffff;
@@ -98,6 +100,7 @@ const Container = styled.li`
 
   .lang ul {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .lang li {
@@ -106,8 +109,13 @@ const Container = styled.li`
     margin-right: 15px;
   }
 
+  .link {
+    text-align: ${({ isMobile }) => (isMobile ? 'center' : 'inherit')};
+    margin-top: ${({ isMobile }) => (isMobile ? '10px' : 0)};
+  }
+
   .cardBottom {
-    display: flex;
+    display: ${({ isMobile }) => (isMobile ? 'block' : 'flex')};
     align-items: center;
     justify-content: space-between;
   }
