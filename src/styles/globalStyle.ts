@@ -52,7 +52,9 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-
+  ul, li {
+    list-style: none;
+  }
 `;
 
 export default GlobalStyle;

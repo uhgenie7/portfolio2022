@@ -35,7 +35,7 @@ const ImageCard = ({ title, language, description, image, github, homepage }: Ty
           </div>
           <div>
             {homepage && (
-              <a target="_blank" rel="noopener noreferrer" href={homepage} className="github">
+              <a target="_blank" rel="noopener noreferrer" href={homepage} className="outlink">
                 <OutLink width={24} height={24} />
               </a>
             )}
@@ -112,7 +112,7 @@ const Container = styled.li`
     justify-content: space-between;
   }
 
-  .github {
+  .outlink {
     margin-right: 16px;
   }
 

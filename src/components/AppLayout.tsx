@@ -2,6 +2,7 @@ import Nav from './Nav';
 import styled from 'styled-components';
 import Footer from '@src/components/Footer';
 import ThemeToggle from '@src/components/ThemeToogle';
+import Social from '@src/components/Social';
 
 interface IProps {
   children: React.ReactNode;
@@ -12,6 +13,7 @@ const AppLayout = ({ children }: IProps) => {
     <Wrap>
       <NavWrapper>
         <Nav />
+        <Social />
         <ThemeToggle />
       </NavWrapper>
       <AppLayoutWrapper>{children}</AppLayoutWrapper>
