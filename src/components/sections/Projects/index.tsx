@@ -19,7 +19,7 @@ const Projects = () => {
           확인할 수 있습니다.
         </p>
         <ul>
-          {toyProject.reverse().map(({ id, image, title, description, homepage, github, language }) => (
+          {[...toyProject].reverse().map(({ id, image, title, description, homepage, github, language }) => (
             <ImageCard
               image={image}
               id={id}
