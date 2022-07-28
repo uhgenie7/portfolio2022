@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "image": "godiva",
+      "title": "Godiva",
+      "description": "자바스크립트의 원리를 이해하기 위해 순수 자바스크립트만을 이용해 개발한 홈페이지.",
+      "homepage": "http://uhj1993.dothome.co.kr/godiva/",
+      "github": "https://github.com/uhj1993/godiva",
+      "language": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "id": 1,
+      "image": "dbportfolio",
+      "title": "DB-portfolio",
+      "description": "FE와 BE의 상호작용과 CRUD를 이해하기 위해 개발한 홈페이지. 언어는 웹 개발에 특화되어 있는 php를 이용하였다.",
+      "homepage": "http://uhj1993.dothome.co.kr/db-portfolio/",
+      "github": "https://github.com/uhj1993/DB_Portfolio",
+      "language": ["HTML", "CSS", "Javascript", "PHP", "MARIADB"]
+    },
+    {
+      "id": 2,
+      "image": "moviesearch",
+      "title": "Movie-search",
+      "description": "Open API의 요청과 응답을 이해하기 위해 개발한 홈페이지.",
+      "homepage": "http://uhj1993.dothome.co.kr/movie_api/index.html",
+      "github": "https://github.com/uhj1993/api_project",
+      "language": ["HTML", "CSS", "Javascript", "Jquery"]
+    },
+    {
+      "id": 3,
+      "image": "openconcert",
+      "title": "OPEN CONCERT",
+      "description": "기획부터 시작하여 개발까지 끝마쳐본 개인 프로젝트.",
+      "homepage": "http://uhj1993.dothome.co.kr/openconcert/",
+      "github": "https://github.com/uhj1993/openconcert",
+      "language": ["HTML", "CSS", "Javascript", "Jquery", "PHP"]
+    },
+    {
+      "id": 4,
+      "image": "ffseracher",
+      "title": "FFXIV SEARCHER",
+      "description": "React와 SPA를 이해하기 위해 개발한 개인 프로젝트",
+      "homepage": "http://uhj1993.dothome.co.kr/ffseracher/",
+      "github": "https://github.com/uhj1993/FFXIV-SEARCHER",
+      "language": ["HTML", "CSS", "SCSS", "JavaScript", "React"]
+    }
+  ]
+}
