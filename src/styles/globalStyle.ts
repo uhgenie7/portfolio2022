@@ -12,7 +12,6 @@ const GlobalStyle = createGlobalStyle`
     background: ${({ theme }) => theme.bgColor};
     color: ${({ theme }) => theme.textColor};
     width: 100%;
-    height: 100%;
     scroll-behavior: smooth;
   }
   

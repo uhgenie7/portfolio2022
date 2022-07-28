@@ -17,10 +17,9 @@ const Section = ({ children, id, title }: IProps) => {
 };
 
 const AboutSectionWrapper = styled.section`
-  padding: 2rem 0;
+  padding: 5rem 0;
   width: 100%;
   counter-increment: section;
-  min-height: 100vh;
 
   h2 {
     width: 100%;
