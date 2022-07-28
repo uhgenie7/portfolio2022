@@ -15,7 +15,7 @@ const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  const onResize = (e) => {
+  const onResize = (e: any) => {
     if (e.currentTarget.innerWidth > 768) {
       setMenuOpen(false);
     }

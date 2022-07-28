@@ -9,7 +9,7 @@ const ThemeToogle = () => {
   const isMobile = useIsMobile();
   const isDarkMode = useRecoilValue(isDarkAtom);
   const setDarkAtom = useSetRecoilState(isDarkAtom);
-  const toggleDark = () => setDarkAtom((prev) => !prev);
+  const toggleDark = () => setDarkAtom((prev: boolean) => !prev);
 
   return (
     <ToggleWrapper isMobile={isMobile} isDarkMode={isDarkMode} onClick={toggleDark}>
