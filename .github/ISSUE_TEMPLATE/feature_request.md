@@ -12,8 +12,11 @@ A clear and concise description of what the problem is. Ex. I'm always frustrate
 
 # 할 일
 
-- [ ] check
+- [ ] markup
+- [ ] style
 
 # 스토리북 (필요 시)
 
 [storybook]()
+
+# 래퍼런스
