@@ -23,7 +23,7 @@
       "image": "moviesearch",
       "title": "Movie-search",
       "description": "Open API의 요청과 응답을 이해하기 위해 개발한 홈페이지.",
-      "homepage": "http://uhj1993.dothome.co.kr/movie_api/index.html",
+      "homepage": "https://uhj1993.github.io/movie_api/",
       "github": "https://github.com/uhj1993/api_project",
       "language": ["HTML", "CSS", "Javascript", "Jquery"]
     },
