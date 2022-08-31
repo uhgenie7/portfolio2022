@@ -5,6 +5,13 @@ import reset from 'styled-reset';
 const GlobalStyle = createGlobalStyle`
   ${reset};
   ${variables};
+
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('/fonts/PretendardVariable.ttf') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
   
   html,
   body {
@@ -13,8 +20,9 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.textColor};
     width: 100%;
     scroll-behavior: smooth;
+    font-family: Pretendard-Regular, -apple-system, sans-serif;
   }
-  
+
   #root {
     margin: 0 auto;
   }
@@ -24,10 +32,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   
-  body, button {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
-  }
 
   p {
     line-height: 1.5;
