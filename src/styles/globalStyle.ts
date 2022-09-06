@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'Pretendard-Regular';
+    font-display: swap;
     src: url('/fonts/PretendardVariable.ttf') format('woff');
     font-weight: 400;
     font-style: normal;
