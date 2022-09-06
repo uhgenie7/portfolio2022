@@ -6,23 +6,11 @@ import config from '@src/libs/config.json';
 import { TypeSkills, TypeSkill } from '@src/types/types';
 import { theme } from '@src/styles/theme';
 import mixins from '@src/styles/mixin';
-var FontFaceObserver = require('fontfaceobserver');
 
 const About = () => {
   let parseJson = JSON.parse(JSON.stringify(config));
   const { skills }: TypeSkills = parseJson;
   const entries = Object.entries(skills);
-
-  var font = new FontFaceObserver('Pretendard-Regular');
-
-  font.load().then(
-    function () {
-      console.log('Font is available');
-    },
-    function () {
-      console.log('Font is not available');
-    },
-  );
 
   return (
     <Section title="About Me" id="about">
