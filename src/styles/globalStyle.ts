@@ -6,13 +6,6 @@ const GlobalStyle = createGlobalStyle`
   ${reset};
   ${variables};
 
-  @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('/fonts/PretendardVariable.ttf') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
   html,
   body {
     box-sizing: border-box;
