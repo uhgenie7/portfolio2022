@@ -5,6 +5,7 @@ import { RecoilRoot } from 'recoil';
 import GlobalStyle from '@src/styles/globalStyle';
 import Head from 'next/head';
 import Favicon from '@src/components/Favicon';
+import '../src/styles/font.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [mounted, setMounted] = useState(false);
