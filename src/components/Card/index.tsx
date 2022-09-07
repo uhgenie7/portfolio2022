@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import OutLink from '../../assets/icons/external_link.svg';
 import type { TypeProject } from '@src/types/types';
 import { useIsMobile } from '@src/hook/useIsMobile';
+import DetailList from '../DetailList';
 
-const Card = ({ title, language, data, url, description }: TypeProject) => {
+const Card = ({ title, language, detail, url, description }: TypeProject) => {
   const isMobile = useIsMobile();
   return (
     <Container isMobile={isMobile}>
@@ -19,10 +20,10 @@ const Card = ({ title, language, data, url, description }: TypeProject) => {
         <p className="cardDesc">{description}</p>
         {!isMobile && (
           <ul>
-            {data.map((data, index) => {
+            {detail.map((data, index) => {
               return (
                 <li key={index} className="cardDone">
-                  {data}
+                  <DetailList {...data} />
                 </li>
               );
             })}
@@ -76,8 +77,10 @@ const Container = styled.li<{ isMobile: boolean }>`
   .cardDone {
     margin: 8px;
     color: var(--main2);
+    counter-increment: index 1;
     &:before {
-      content: '▹';
+      font-size: 0.5em;
+      content: '0' counter(index) ')';
       color: var(--main2);
       margin-right: 4px;
     }

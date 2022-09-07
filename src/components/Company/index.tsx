@@ -25,9 +25,18 @@ const Company = ({ title, date, icon, project, url }: TypeCompany) => {
         <p className="range">{date}</p>
       </div>
       <ul className="projectList">
-        {[...project].reverse().map(({ id, title, language, description, data, url }) => {
+        {[...project].reverse().map(({ id, title, date, language, description, detail, url }) => {
           return (
-            <Card key={id} id={id} title={title} language={language} description={description} data={data} url={url} />
+            <Card
+              key={id}
+              id={id}
+              title={title}
+              date={date}
+              description={description}
+              detail={detail}
+              language={language}
+              url={url}
+            />
           );
         })}
       </ul>

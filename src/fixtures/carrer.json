@@ -9,46 +9,133 @@
       "project": [
         {
           "id": 0,
-          "title": "콩 생육 모니터링 앱 개발",
-          "language": ["HTML", "CSS", "Javascript", "JQuery"],
-          "description": "에이아이에스 B2G(with 충북 괴산군 노지 스마트농업 실증단지) 콩 생육 모니터링 앱 개발",
-          "data": [
-            "표준 웹 기술을 사용할 수 있는 Cordova 프레임워크로 개발 및 배포",
-            "사용자가 콩 생육 정보를 효율적으로 소비할 수 있도록 화면 및 기능 개발",
-            "Chart.js를 이용한 차트 화면 개발"
+          "title": "콩 생육 모니터링 애플리케이션 개발",
+          "date": "2021.6 ~ 2021.12",
+          "description": "에이아이에스 B2G(with 충북 괴산군 노지 스마트농업 실증단지) 콩 생육 모니터링 애플리케이션 개발",
+          "detail": [
+            {
+              "id": 0,
+              "work": "표준 웹 기술을 사용할 수 있는 Cordova 프레임워크로 개발 및 배포",
+              "result": ["친숙한 HTML, CSS, JS 기술을 사용하여 개발 기간 단축"]
+            },
+            {
+              "id": 1,
+              "work": "사용자가 콩 생육 정보를 효율적으로 소비할 수 있도록 화면 및 기능 개발",
+              "result": [
+                "날씨 데이터를 시각적으로 표현할 수 있는 Chart.js 라이브러리를 이용한 차트 화면 개발",
+                "시스템 폰트 크기에 따른 스타일 대응"
+              ]
+            }
           ],
+          "language": ["HTML", "CSS", "Javascript", "JQuery"],
           "url": null
         },
         {
           "id": 1,
           "title": "에이아이에스 홈페이지 리뉴얼",
-          "language": ["React"],
+          "date": "2021.7 ~ 2022.4",
           "description": "php로 만들어진 사내 홈페이지를 React로 리뉴얼",
-          "data": ["React 기반의 사내 홈페이지 개발", "SEO를 위한 react-helmet 사용", "다국어  지원", "GA, GTM 도입"],
+          "detail": [
+            {
+              "id": 0,
+              "work": "php로 만들어진 사내 홈페이지를 React로 리뉴얼",
+              "result": ["빠르고 사용자 인터페이스 구축에 더 적합한 React 사용"]
+            },
+            {
+              "id": 1,
+              "work": "웹 접근성을 고려한 시맨틱 마크업 개발",
+              "performance": ["Lighthouse 기준, Accessibility 72점 -> 98점으로 개선"]
+            },
+            {
+              "id": 2,
+              "work": "SEO 최적화를 통해 에이아이에스 홈페이지 상위 노출",
+              "performance": [
+                "같은 이름의 회사가 많아서 회사 홈페이지가 제대로 노출되지 않았음",
+                "CSR의 단점인 SEO 최적화를 위해 react-helmet, react-snap을 사용",
+                "Lighthouse 기준, SEO 75점 -> 83점으로 개선",
+                "회사 홈페이지 상위 노출 성공"
+              ]
+            },
+            {
+              "id": 3,
+              "work": "다국어 지원",
+              "result": [
+                "언어나 지역에 관계없이 모든 방문자가 원활하고 직관적인 UX를 즐길 수 있도록 i18n 도입 및 적용",
+                "한국어와 영어의 어순 차이를 고려한 스타일로 일관된 UX를 줌"
+              ]
+            },
+            {
+              "id": 4,
+              "work": "GA, GTM 도입",
+              "result": ["방문자의 유입 출처, 분석을 하기 위해 도입"]
+            }
+          ],
+          "language": ["React"],
           "url": "https://www.aiskorea.co.kr/ko/home"
         },
         {
           "id": 2,
-          "title": "에이아이에스 관리자 페이지 개발",
-          "language": ["NextJs", "Apollo", "Typescript"],
-          "description": "사내 관리자 페이지 개발",
-          "data": ["React 기반의 Next.js 개발 환경 구축", "요구사항 도출 및 화면 설계", "화면 및 기능 개발"],
-          "url": null
+          "title": "'잘키움' 어플리케이션 개발",
+          "date": "2021.6 ~ 2022.12",
+          "language": ["React-Native", "Typescript"],
+          "description": "환경 예측과 작물에 대한 깊은 이해를 바탕으로 한 농작업 처방 '잘키움' 애플리케이션 개발",
+          "detail": [
+            {
+              "id": 0,
+              "work": "React-Native 기반의 애플리케이션 개발 환경 구축, 개발, 배포, 유지보수",
+              "result": ["러닝 커브가 상대적으로 낮고 비용이 적게 들어가는 React-Native로 개발"]
+            },
+            {
+              "id": 1,
+              "work": "Typescript 최초 도입",
+              "result": ["도구의 지원을 통한 편리한 개발이 가능해짐", "컴파일 단계에서 오류를 포착하여 디버깅이 쉬워짐"]
+            },
+            {
+              "id": 2,
+              "work": "RTK(Redux-Toolkit)를 이용한 데이터 관리",
+              "result": [
+                "기존 Redux의 단점을 보완한 라이브러리 사용",
+                "redux thunk, immer가 내장되어 있어 보일러 플레이트 코드가 줄어듬"
+              ]
+            },
+            {
+              "id": 3,
+              "work": "React-Navigation 코드 개선",
+              "performance": [
+                "하나의 Root Navigation에 Screen Stack이 몰려 있어 로딩이 지연됨",
+                "User Auth 유무에 따라 Screen을 분기하여 로그인 속도를 43.8ms -> 9.9ms 개선"
+              ]
+            },
+            {
+              "id": 4,
+              "work": "SMS 인증 코드의 원터치 자동 완성 API를 이용한 사용자 편의성 개선",
+              "performance": [
+                "문자가 오면 하나하나 입력해주어야 하는 불편함이 있었음",
+                "원터치 자동 완성 라이브러리를 이용해 사용자 경험 개선"
+              ]
+            },
+            {
+              "id": 5,
+              "work": "협업을 원활하게 하기 위해 gitflow, issue-templetes 도입",
+              "result": ["브랜치 충돌 최소화", "이슈 트래킹으로 효율적인 코드 관리"]
+            }
+          ],
+          "url": "https://play.google.com/store/apps/details?id=com.aiskorea.wellgrower&hl=ko"
         },
         {
           "id": 3,
-          "title": "'잘키움' 어플리케이션 개발",
-          "language": ["React-Native", "Typescript"],
-          "description": "데이터 기반 노지 스마트팜 솔루션 '잘키움' 어플리케이션 개발",
-          "data": [
-            "React-Native 기반의 어플리케이션 개발 환경 구축 및 배포",
-            "화면 및 기능 개발",
-            "RTK(Redux-Toolkit)를 이용한 데이터 관리",
-            "React-navigation을 이용한 네비게이션 및 히스토리 관리",
-            "SMS 인증 코드의 원터치 자동 완성 API를 이용한 사용자 편의성 개선",
-            "encrypted-storage, keychain 으로 민감한 데이터 암호화"
+          "title": "에이아이에스 관리자 페이지 개발",
+          "date": "2021.11 ~ 현재 개발 중",
+          "language": ["NextJs", "TanStack-Query", "Typescript"],
+          "description": "사내 관리자 웹페이지 개발",
+          "detail": [
+            {
+              "id": 0,
+              "work": "React 기반의 Next.js 개발 환경 구축, 개발",
+              "result": ["pre-reloading을 통해 더 좋은 유저 경험을 줌"]
+            }
           ],
-          "url": "https://play.google.com/store/apps/details?id=com.aiskorea.wellgrower&hl=ko"
+          "url": null
         }
       ]
     }

@@ -25,10 +25,18 @@ export interface TypeCompany {
 export interface TypeProject {
   id: number;
   title: string;
-  language: string[];
+  date: string;
   description: string;
-  data: string[];
+  detail: TypeProjectDetail[];
+  language: string[];
   url: string | null;
+}
+
+export interface TypeProjectDetail {
+  id: number;
+  work: string;
+  result?: string[];
+  performance?: string[];
 }
 
 export interface TypeToyProjects {
