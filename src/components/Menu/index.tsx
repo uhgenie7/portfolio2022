@@ -4,7 +4,7 @@ import { useIsMobile } from '@src/hook/useIsMobile';
 import useOnClickOutside from '@src/hook/useOnClickOutside';
 import styled from 'styled-components';
 import Social from '../Social';
-import config from '@src/libs/config.json';
+import config from '@src/fixtures/config.json';
 import Link from 'next/link';
 import MenuIcon from '../../assets/icons/menu.svg';
 import CloseIcon from '../../assets/icons/close.svg';

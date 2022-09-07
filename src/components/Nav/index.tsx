@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import config from '@src/libs/config.json';
+import config from '@src/fixtures/config.json';
 import Link from 'next/link';
 
 const Nav = () => {

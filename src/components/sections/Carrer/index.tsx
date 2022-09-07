@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Section from '..';
-import carrer from '@src/libs/carrer.json';
+import carrer from '@src/fixtures/carrer.json';
 import Company from '@src/components/Company';
 import type { TypeCarrer } from '@src/types/types';
 

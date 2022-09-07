@@ -1,10 +1,8 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import { useIsMobile } from '@src/hook/useIsMobile';
 import Section from '..';
-import config from '@src/libs/config.json';
+import config from '@src/fixtures/config.json';
 import { TypeSkills, TypeSkill } from '@src/types/types';
-import { theme } from '@src/styles/theme';
 import mixins from '@src/styles/mixin';
 
 const About = () => {
@@ -19,17 +17,20 @@ const About = () => {
           <p>
             안녕하세요, <span className="hightlight">프론트엔드 개발자</span> 엄혜진입니다.
           </p>
-          <p>
-            저는 프론트엔드 개발자로서 어떻게 하면 사용자가 더 편리하고 효율적으로 정보를 소비할 수 있을 지 고민합니다.
-          </p>
-          <p>
-            보다 나은 사용자 경험을 제공하기 위해 <span className="hightlight">시맨틱 마크업</span>을 준수하고{' '}
-            <span className="hightlight">정렬된 스타일</span>, <span className="hightlight">인터랙티브</span>한 기능을
-            구현하려 노력하고 있습니다.
-          </p>
+          <p>저는 프론트엔드 개발자로서</p>
+          <ul className="abilities">
+            <li className="ability">
+              어떻게 하면 사용자가 더 편리하고 효율적으로 정보를 소비할 수 있을 지 고민합니다.
+            </li>
+            <li className="ability">
+              항상 더 좋은 코드가 없는지 고민하면서 문제에 직면하면 해결할 때까지 몰두하며 개발합니다.
+            </li>
+            <li className="ability">
+              기억보다 기록이 중요함을 알기에 기술 블로그를 운영을 하고 있으며 가치있는 커밋을 중요시합니다.
+            </li>
+          </ul>
         </div>
         <div className="skillsWrapper">
-          <br />
           <p>
             아래 <span className="hightlight">스킬</span>에 경험이 있고 새로운 것을 배우는데 관심이 있습니다.
             <br />
@@ -97,5 +98,20 @@ const InnerWrapper = styled.div`
 
   .hightlight {
     ${mixins.halfHL}
+  }
+
+  .abilities {
+    margin: 1rem;
+  }
+
+  .ability {
+    counter-increment: index 1;
+    padding: 0.5em 0;
+    &:before {
+      content: '0' counter(index) '.';
+      margin-right: 5px;
+      text-align: right;
+      color: var(--main);
+    }
   }
 `;

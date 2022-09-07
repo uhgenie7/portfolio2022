@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Section from '..';
 import mixins from '@src/styles/mixin';
-import projects from '@src/libs/projects.json';
+import projects from '@src/fixtures/projects.json';
 import ImageCard from '@src/components/ImageCard';
 import type { TypeToyProjects } from '@src/types/types';
 

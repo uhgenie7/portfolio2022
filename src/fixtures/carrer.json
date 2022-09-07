@@ -9,17 +9,21 @@
       "project": [
         {
           "id": 0,
-          "title": "웹앱 개발",
+          "title": "콩 생육 모니터링 앱 개발",
           "language": ["HTML", "CSS", "Javascript", "JQuery"],
-          "description": "B2G 프로젝트",
-          "data": ["하이브리드 앱 개발", "전반적인 화면 및 기능 개발", "Chart.js를 이용한 차트 화면 개발"],
+          "description": "에이아이에스 B2G(with 충북 괴산군 노지 스마트농업 실증단지) 콩 생육 모니터링 앱 개발",
+          "data": [
+            "표준 웹 기술을 사용할 수 있는 Cordova 프레임워크로 개발 및 배포",
+            "사용자가 콩 생육 정보를 효율적으로 소비할 수 있도록 화면 및 기능 개발",
+            "Chart.js를 이용한 차트 화면 개발"
+          ],
           "url": null
         },
         {
           "id": 1,
-          "title": "에이아이에스 홈페이지 개발",
+          "title": "에이아이에스 홈페이지 리뉴얼",
           "language": ["React"],
-          "description": "사내 홈페이지 개발",
+          "description": "php로 만들어진 사내 홈페이지를 React로 리뉴얼",
           "data": ["React 기반의 사내 홈페이지 개발", "SEO를 위한 react-helmet 사용", "다국어  지원", "GA, GTM 도입"],
           "url": "https://www.aiskorea.co.kr/ko/home"
         },
