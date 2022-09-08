@@ -61,5 +61,6 @@ const AppLayoutWrapper = styled.div<{ isMobile: boolean }>`
   justify-content: center;
   flex-direction: column;
   margin: auto;
+  padding: 5rem 0;
   width: ${({ isMobile }) => (isMobile ? 'min(75vw, 400px);' : '46.25rem')};
 `;

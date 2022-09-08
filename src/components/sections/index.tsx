@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import styled from 'styled-components';
 
 interface IProps {
@@ -17,7 +16,7 @@ const Section = ({ children, id, title }: IProps) => {
 };
 
 const AboutSectionWrapper = styled.section`
-  padding: 5rem 0;
+  margin-bottom: 5rem;
   width: 100%;
   counter-increment: section;
 
