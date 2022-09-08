@@ -21,8 +21,9 @@
 ## 주요 특징
 
 
-- NextJS 프레임워크 사용
+- SEO에 친화적인 NextJS 프레임워크 사용
 - Recoil, Styled-Component로 다크모드 테마 전역 적용
+- [프로젝트 이슈](https://github.com/uhj1993/portfolio2022/issues) 관리
 
 ## 사용한 언어
 
